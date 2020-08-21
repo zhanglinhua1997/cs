@@ -1,0 +1,686 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑";
+    color: black;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+textarea {
+    outline: none;
+}
+
+
+
+.common {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+// <!-- 头部 -->
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 10;
+    height: 60px;
+    width: 100%;
+    background-color: whitesmoke;
+
+    .hd {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+
+            li a {
+                &::after {
+                    display: none;
+                    content: "";
+                    width: 6px;
+                    height: 6px;
+                    background-color: blue;
+                    border-radius: 50%;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 50%;
+                    margin-left: -3px;
+
+                }
+            }
+
+            li a {
+                display: block;
+                font-size: 18px;
+                padding: 0 30px;
+                transition: 0.5s;
+                position: relative;
+                line-height: 60px;
+
+                &:hover {
+                    color: blue;
+
+                    &::after {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .hdbox {
+        display: none;
+        width: 40px;
+        border: 1px soild blue;
+        border-radius: 3px;
+        padding: 3px 0;
+
+        i {
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: blueviolet;
+            margin: 7px auto
+        }
+    }
+}
+
+// <!-- 头部 -->
+
+//轮播
+.banner {
+
+    height: 500px;
+
+    a {
+        display: block;
+        height: 500px;
+        background: no-repeat center;
+        cursor: move;
+    }
+
+    .small {
+        display: none;
+    }
+}
+
+//轮播
+
+//服务模块
+.service {
+    padding: 90px 0 50px;
+
+    .bd {
+        text-align: center;
+
+        h2 {
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        .line {
+            width: 50px;
+            height: 2px;
+            background-color: blue;
+            display: inline-block;
+        }
+
+        .bot {
+            padding-top: 60px;
+            display: flex;
+
+            .box {
+                display: block;
+                height: 380px;
+
+                padding: 0 20px;
+
+                .boxbot {
+                    width: 200px;
+                    height: 200px;
+                    border: 1px solid blue;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    line-height: 200px;
+
+                    &:hover {
+                        background-color: blueviolet;
+                    }
+
+                    &:hover .iconfont {
+                        color: white;
+                    }
+
+                    .iconfont {
+                        font-size: 100px;
+                        color: blue;
+
+
+                    }
+                }
+
+                h3 {
+                    padding: 50px 0 25px;
+                    font-size: 20px;
+                    font-weight: 400px;
+
+                    &:hover {
+                        color: blue;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+//服务模块
+
+//关于模块
+.about {
+
+    padding: 90px 0;
+
+
+    .about1 {
+        text-align: center;
+
+        h2 {
+            font-size: 32px;
+            font-weight: 400;
+            color: white;
+        }
+
+        .line {
+            width: 50px;
+            height: 2px;
+            background-color: white;
+            display: inline-block;
+        }
+    }
+
+    .box {
+        p {
+            padding-top: 20px;
+            color: white;
+        }
+    }
+
+    .btnbox {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+
+        .btn {
+
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            background-image: linear-gradient(to right, red, yellow);
+            line-height: 50px;
+            border-radius: 8px;
+
+            &:nth-child(2) {
+                background-image: linear-gradient(to right, blue, green);
+            }
+
+        }
+    }
+}
+
+//关于模块
+
+// 案例展示
+.case {
+
+    padding-top: 30px;
+
+    .casetop {
+        text-align: center;
+
+        h2 {
+            font-size: 32px;
+            font-weight: 400;
+            color: black;
+        }
+
+        .line {
+            width: 50px;
+            height: 2px;
+            background-color: blue;
+            display: inline-block;
+        }
+    }
+
+    .casebox {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .box {
+            display: block;
+            width: 32%;
+            margin-bottom: 30px;
+            position: relative;
+            perspective: 600px;
+            overflow: hidden;
+
+            &:hover .ceng {
+                transform: rotate(0);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .ceng {
+                transition: 0.5s;
+                display: none;
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                color: white;
+                opacity: 0.8;
+                top: 0;
+                left: 0;
+                transform: rotatex(110deg);
+                transform-origin: bottom;
+
+                h3 {
+                    font-size: 25px;
+                    padding: 20px;
+                    color: white;
+                    text-align: center;
+                }
+
+                p {
+                    padding: 20px;
+
+                    color: white;
+                    text-align: center;
+
+                }
+
+
+
+            }
+        }
+
+
+    }
+}
+
+// 案例展示
+
+// 底部模块
+.foot {
+    margin-top: 20px;
+    height: 50px;
+    background-color: black;
+
+    .box {
+        color: white;
+        line-height: 50px;
+
+        a {
+            color: white;
+        }
+
+        .year {
+            color: white;
+        }
+
+    }
+}
+
+// 底部模块
+
+@media(max-width:992px) {
+    .common {
+        width: 100%;
+    }
+
+    // <!-- 头部 -->
+    .header {
+
+
+
+        .hd {
+            .nav {
+                display: none;
+
+            }
+
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            ul {
+
+                display: flex;
+
+                li a {
+
+                    &::after {
+                        display: none;
+                        content: "";
+                        width: 6px;
+                        height: 6px;
+                        background-color: blue;
+                        border-radius: 50%;
+                        position: absolute;
+                        bottom: 10px;
+                        left: 50%;
+                        margin-left: -3px;
+
+                    }
+                }
+
+                li a {
+                    display: block;
+                    font-size: 18px;
+                    padding: 0 30px;
+                    transition: 0.5s;
+                    position: relative;
+                    line-height: 60px;
+
+                    &:hover {
+                        color: blue;
+
+                        &::after {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        .hdbox {
+            display: block;
+            width: 40px;
+            border: 1px soild blue;
+            border-radius: 3px;
+            padding: 3px 0;
+
+            i {
+                display: block;
+                width: 30px;
+                height: 2px;
+                background-color: blueviolet;
+                margin: 7px auto
+            }
+        }
+    }
+
+    // <!-- 头部 -->
+
+    //轮播
+    .banner {
+
+        height: 500px;
+
+        a {
+            display: block;
+            height: 500px;
+            background-size: cover;
+        }
+
+        .small {
+            display: block;
+        }
+
+        .big {
+            display: none;
+        }
+    }
+
+    //轮播
+
+    //服务模块
+    .service {
+        padding: 60px 0;
+
+        .bd {
+            text-align: center;
+
+            h2 {
+                font-size: 27px;
+                font-weight: 900;
+            }
+
+            .line {
+                width: 50px;
+                height: 2px;
+                background-color: blue;
+                display: inline-block;
+            }
+
+            .bot {
+                padding-top: 60px;
+                flex-wrap: wrap;
+
+
+                .box {
+                    height: auto;
+                    width: 40%;
+                    padding: 20px 20px;
+
+                    .boxbot {
+                        width: 130px;
+                        height: 130px;
+                        border: 1px solid blue;
+                        border-radius: 50%;
+                        margin: 0 auto;
+                        line-height: 200px;
+
+                        &:hover {
+                            background-color: blueviolet;
+                        }
+
+                        &:hover .iconfont {
+                            color: white;
+                        }
+
+                        .iconfont {
+                            font-size: 70px;
+                            color: blue;
+                            line-height: 70px;
+
+
+                        }
+                    }
+
+                    h3 {
+                        padding: 50px 0 25px;
+                        font-size: 20px;
+                        font-weight: 400px;
+
+                        &:hover {
+                            color: blue;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    //服务模块
+    //关于模块
+    .about {
+
+        padding: 90px 0;
+
+
+        .about1 {
+            text-align: center;
+
+            h2 {
+                font-size: 25px;
+                font-weight: 400;
+                color: white;
+            }
+
+            .line {
+                width: 50px;
+                height: 2px;
+                background-color: white;
+                display: inline-block;
+            }
+        }
+
+        .box {
+            p {
+                padding-top: 20px;
+                color: white;
+            }
+        }
+
+        .btnbox {
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+
+            .btn {
+
+
+                width: 120px;
+                height: 40px;
+
+                line-height: 50px;
+                border-radius: 8px;
+
+
+
+            }
+        }
+    }
+
+    //关于模块
+
+    // 案例展示
+    .case {
+
+        padding-top: 30px;
+
+        .casetop {
+            text-align: center;
+
+            h2 {
+                font-size: 25px;
+                font-weight: 400;
+                color: black;
+            }
+
+            .line {
+                width: 50px;
+                height: 2px;
+                background-color: blue;
+                display: inline-block;
+            }
+        }
+
+        .casebox {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .box {
+                display: block;
+                width: 48%;
+                margin-bottom: 30px;
+                position: relative;
+                perspective: 600px;
+                overflow: hidden;
+
+                &:hover .ceng {
+                    transform: rotate(0);
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .ceng {
+                    transition: 0.5s;
+                    display: none;
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-color: black;
+                    color: white;
+                    opacity: 0.8;
+                    top: 0;
+                    left: 0;
+                    transform: rotatex(110deg);
+                    transform-origin: bottom;
+
+                    h3 {
+                        font-size: 20px;
+                        padding: 20px;
+                        color: white;
+                        text-align: center;
+                    }
+
+                    p {
+                        padding-bottom: 20px;
+                        color: white;
+                        text-align: center;
+
+
+                    }
+
+
+
+                }
+            }
+
+
+        }
+    }
+
+    // 底部模块
+    .foot {
+        margin-top: 20px;
+        height: 50px;
+        background-color: black;
+
+        .box {
+            color: white;
+            line-height: 50px;
+
+            a {
+                color: white;
+            }
+
+            .year {
+                color: white;
+            }
+
+        }
+    }
+
+    // 底部模块
+}

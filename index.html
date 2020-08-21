@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唯品互动</title>
+    <link rel="stylesheet" href="./css//swiper.min.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css//index.css">
+    <script src="./js//jquery.min.js"></script>
+    <script src="./js//swiper.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <div class="common hd">
+            <a href="#" class="logo">
+                <img src="./images/hd_logo.png" alt="">
+            </a>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">案例</a></li>
+                    <li><a href="#">服务</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">新闻咨询</a></li>
+                </ul>
+            </div>
+            <div class="hdbox">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        </div>
+    </header>
+    <!-- 头部 -->
+
+    <!-- 轮播 -->
+    <section class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#" class="big" style="background-image: url(images/banner1.jpg);"></a>
+                    <a href="#" class="small" style="background-image: url(images/small1.jpg);"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="big" style="background-image: url(images/banner2.jpg);"></a>
+                    <a href="#" class="small" style="background-image: url(images/small2.jpg);"></a>
+
+                </div>
+
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <script>
+        var bannerSwiper = new Swiper('.banner .swiper-container', {
+
+            loop: true, // 循环模式选项
+
+            // 如果需要分页器
+            pagination: {
+                el: '.banner .swiper-pagination',
+            },
+
+        })
+    </script>
+    <!-- 轮播 -->
+
+    <!-- 服务模块 -->
+    <section class="service">
+        <div class="  bd">
+            <h2>我们专注的服务内容</h2>
+            <div class="line"></div>
+            <div class="common bot">
+                <a href="#" class="box">
+                    <div class="boxbot">
+                        <i class="iconfont icon-diannao"></i>
+                    </div>
+                    <h3>App开发</h3>
+                    <p>从HTML5最基础的media媒体查询开始讲起，介绍不同的响应式网站的技术，讲解Bootstrap的原理，</p>
+                </a>
+                <a href="#" class="box">
+                    <div class="boxbot">
+                        <i class="iconfont icon-shouji"></i>
+
+                    </div>
+                    <h3>App开发</h3>
+                    <p>从HTML5最基础的media媒体查询开始讲起，介绍不同的响应式网站的技术，讲解Bootstrap的原理，</p>
+                </a>
+                <a href="#" class="box">
+                    <div class="boxbot">
+                        <i class="iconfont icon-gouwuche01"></i>
+
+                    </div>
+                    <h3>App开发</h3>
+                    <p>从HTML5最基础的media媒体查询开始讲起，介绍不同的响应式网站的技术，讲解Bootstrap的原理，</p>
+                </a>
+                <a href="#" class="box">
+                    <div class="boxbot">
+                        <i class="iconfont icon-jiaoyuxingye"></i>
+
+                    </div>
+                    <h3>App开发</h3>
+                    <p>从HTML5最基础的media媒体查询开始讲起，介绍不同的响应式网站的技术，讲解Bootstrap的原理，</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- 服务模块 -->
+
+    <!-- 关于模块 -->
+    <section class="about" style="  background: url(./images/aboutBg.jpg)no-repeat center fixed ;">
+        <div class="common about1">
+            <h2>我们是不断创新，专注研究，充满活力<br>用户体验专家</h2>
+            <div class="line"></div>
+            <div class="common box">
+                <p>我们是不断创新，专注研究，充满活力
+                    用户体验专家我们是不断创新，专注研究，充满活力
+                    用户体验专家
+                </p>
+                <div class="btnbox">
+                    <a href="#" class="btn lef">咨询我们</a>
+                    <a href="#" class="btn rig">了解更多</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 关于模块 -->
+
+
+    <!-- // 案例展示 -->
+    <section class="case">
+        <div class="common casetop">
+            <h2>我们的项目案例展示</h2>
+            <div class="line"></div>
+        </div>
+        <div class="common casebox">
+            <a href="#" class="box">
+                <img src="./images/case1.jpg" alt="">
+                <div class="ceng">
+                    <h3>这是标题文字</h3>
+
+                    <p>内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍</p>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/case2.jpg" alt="">
+                <div class="ceng">
+                    <h3>这是标题文字</h3>
+
+                    <p>内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍</p>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/case3.jpg" alt="">
+                <div class="ceng">
+                    <h3>这是标题文字</h3>
+
+                    <p>内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍</p>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/case4.jpg" alt="">
+                <div class="ceng">
+                    <h3>这是标题文字</h3>
+
+                    <p>内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍</p>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/case5.jpg" alt="">
+                <div class="ceng">
+                    <h3>这是标题文字</h3>
+
+                    <p>内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍</p>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/case6.jpg" alt="">
+                <div class="ceng">
+                    <h3>这是标题文字</h3>
+
+                    <p>内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍</p>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/case7.jpg" alt="">
+                <div class="ceng">
+                    <h3>这是标题文字</h3>
+
+                    <p>内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍</p>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/case8.jpg" alt="">
+                <div class="ceng">
+                    <h3>这是标题文字</h3>
+
+                    <p>内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍</p>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/case9.jpg" alt="">
+                <div class="ceng">
+                    <h3>这是标题文字</h3>
+
+                    <p>内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- // 案例展示 -->
+
+    <!-- 底部模块 -->
+    <footer class="foot">
+        <div class="common box">
+            版权所有;&nbsp;XXXXXXXXXXXXXXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">唯品互动</a>
+            Copyright 2010-<span class="year"></span> weipin design All rights reserved
+        </div>
+    </footer>
+    <!-- 底部模块 -->
+    <script>
+        var years = new Date().getFullYear()
+
+
+        $(function () {
+            $(".year").html(years)
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,492 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "微软雅黑";
+  color: black;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+img,
+textarea {
+  outline: none;
+}
+.common {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: 10;
+  height: 60px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.header .hd {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .hd ul {
+  display: flex;
+}
+.header .hd ul li a::after {
+  display: none;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: blue;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -3px;
+}
+.header .hd ul li a {
+  display: block;
+  font-size: 18px;
+  padding: 0 30px;
+  transition: 0.5s;
+  position: relative;
+  line-height: 60px;
+}
+.header .hd ul li a:hover {
+  color: blue;
+}
+.header .hd ul li a:hover::after {
+  display: block;
+}
+.header .hdbox {
+  display: none;
+  width: 40px;
+  border: 1px soild blue;
+  border-radius: 3px;
+  padding: 3px 0;
+}
+.header .hdbox i {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: blueviolet;
+  margin: 7px auto;
+}
+.banner {
+  height: 500px;
+}
+.banner a {
+  display: block;
+  height: 500px;
+  background: no-repeat center;
+  cursor: move;
+}
+.banner .small {
+  display: none;
+}
+.service {
+  padding: 90px 0 50px;
+}
+.service .bd {
+  text-align: center;
+}
+.service .bd h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.service .bd .line {
+  width: 50px;
+  height: 2px;
+  background-color: blue;
+  display: inline-block;
+}
+.service .bd .bot {
+  padding-top: 60px;
+  display: flex;
+}
+.service .bd .bot .box {
+  display: block;
+  height: 380px;
+  padding: 0 20px;
+}
+.service .bd .bot .box .boxbot {
+  width: 200px;
+  height: 200px;
+  border: 1px solid blue;
+  border-radius: 50%;
+  margin: 0 auto;
+  line-height: 200px;
+}
+.service .bd .bot .box .boxbot:hover {
+  background-color: blueviolet;
+}
+.service .bd .bot .box .boxbot:hover .iconfont {
+  color: white;
+}
+.service .bd .bot .box .boxbot .iconfont {
+  font-size: 100px;
+  color: blue;
+}
+.service .bd .bot .box h3 {
+  padding: 50px 0 25px;
+  font-size: 20px;
+  font-weight: 400px;
+}
+.service .bd .bot .box h3:hover {
+  color: blue;
+}
+.about {
+  padding: 90px 0;
+}
+.about .about1 {
+  text-align: center;
+}
+.about .about1 h2 {
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+}
+.about .about1 .line {
+  width: 50px;
+  height: 2px;
+  background-color: white;
+  display: inline-block;
+}
+.about .box p {
+  padding-top: 20px;
+  color: white;
+}
+.about .btnbox {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+.about .btnbox .btn {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  background-image: linear-gradient(to right, red, yellow);
+  line-height: 50px;
+  border-radius: 8px;
+}
+.about .btnbox .btn:nth-child(2) {
+  background-image: linear-gradient(to right, blue, green);
+}
+.case {
+  padding-top: 30px;
+}
+.case .casetop {
+  text-align: center;
+}
+.case .casetop h2 {
+  font-size: 32px;
+  font-weight: 400;
+  color: black;
+}
+.case .casetop .line {
+  width: 50px;
+  height: 2px;
+  background-color: blue;
+  display: inline-block;
+}
+.case .casebox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.case .casebox .box {
+  display: block;
+  width: 32%;
+  margin-bottom: 30px;
+  position: relative;
+  perspective: 600px;
+  overflow: hidden;
+}
+.case .casebox .box:hover .ceng {
+  transform: rotate(0);
+}
+.case .casebox .box img {
+  width: 100%;
+  height: 100%;
+}
+.case .casebox .box .ceng {
+  transition: 0.5s;
+  display: none;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  transform: rotatex(110deg);
+  transform-origin: bottom;
+}
+.case .casebox .box .ceng h3 {
+  font-size: 25px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+.case .casebox .box .ceng p {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+.foot {
+  margin-top: 20px;
+  height: 50px;
+  background-color: black;
+}
+.foot .box {
+  color: white;
+  line-height: 50px;
+}
+.foot .box a {
+  color: white;
+}
+.foot .box .year {
+  color: white;
+}
+@media (max-width: 992px) {
+  .common {
+    width: 100%;
+  }
+  .header .hd {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .hd .nav {
+    display: none;
+  }
+  .header .hd ul {
+    display: flex;
+  }
+  .header .hd ul li a::after {
+    display: none;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -3px;
+  }
+  .header .hd ul li a {
+    display: block;
+    font-size: 18px;
+    padding: 0 30px;
+    transition: 0.5s;
+    position: relative;
+    line-height: 60px;
+  }
+  .header .hd ul li a:hover {
+    color: blue;
+  }
+  .header .hd ul li a:hover::after {
+    display: block;
+  }
+  .header .hdbox {
+    display: block;
+    width: 40px;
+    border: 1px soild blue;
+    border-radius: 3px;
+    padding: 3px 0;
+  }
+  .header .hdbox i {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: blueviolet;
+    margin: 7px auto;
+  }
+  .banner {
+    height: 500px;
+  }
+  .banner a {
+    display: block;
+    height: 500px;
+    background-size: cover;
+  }
+  .banner .small {
+    display: block;
+  }
+  .banner .big {
+    display: none;
+  }
+  .service {
+    padding: 60px 0;
+  }
+  .service .bd {
+    text-align: center;
+  }
+  .service .bd h2 {
+    font-size: 27px;
+    font-weight: 900;
+  }
+  .service .bd .line {
+    width: 50px;
+    height: 2px;
+    background-color: blue;
+    display: inline-block;
+  }
+  .service .bd .bot {
+    padding-top: 60px;
+    flex-wrap: wrap;
+  }
+  .service .bd .bot .box {
+    height: auto;
+    width: 40%;
+    padding: 20px 20px;
+  }
+  .service .bd .bot .box .boxbot {
+    width: 130px;
+    height: 130px;
+    border: 1px solid blue;
+    border-radius: 50%;
+    margin: 0 auto;
+    line-height: 200px;
+  }
+  .service .bd .bot .box .boxbot:hover {
+    background-color: blueviolet;
+  }
+  .service .bd .bot .box .boxbot:hover .iconfont {
+    color: white;
+  }
+  .service .bd .bot .box .boxbot .iconfont {
+    font-size: 70px;
+    color: blue;
+    line-height: 70px;
+  }
+  .service .bd .bot .box h3 {
+    padding: 50px 0 25px;
+    font-size: 20px;
+    font-weight: 400px;
+  }
+  .service .bd .bot .box h3:hover {
+    color: blue;
+  }
+  .about {
+    padding: 90px 0;
+  }
+  .about .about1 {
+    text-align: center;
+  }
+  .about .about1 h2 {
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+  }
+  .about .about1 .line {
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    display: inline-block;
+  }
+  .about .box p {
+    padding-top: 20px;
+    color: white;
+  }
+  .about .btnbox {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .about .btnbox .btn {
+    width: 120px;
+    height: 40px;
+    line-height: 50px;
+    border-radius: 8px;
+  }
+  .case {
+    padding-top: 30px;
+  }
+  .case .casetop {
+    text-align: center;
+  }
+  .case .casetop h2 {
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+  }
+  .case .casetop .line {
+    width: 50px;
+    height: 2px;
+    background-color: blue;
+    display: inline-block;
+  }
+  .case .casebox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .case .casebox .box {
+    display: block;
+    width: 48%;
+    margin-bottom: 30px;
+    position: relative;
+    perspective: 600px;
+    overflow: hidden;
+  }
+  .case .casebox .box:hover .ceng {
+    transform: rotate(0);
+  }
+  .case .casebox .box img {
+    width: 100%;
+    height: 100%;
+  }
+  .case .casebox .box .ceng {
+    transition: 0.5s;
+    display: none;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    transform: rotatex(110deg);
+    transform-origin: bottom;
+  }
+  .case .casebox .box .ceng h3 {
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  .case .casebox .box .ceng p {
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+  }
+  .foot {
+    margin-top: 20px;
+    height: 50px;
+    background-color: black;
+  }
+  .foot .box {
+    color: white;
+    line-height: 50px;
+  }
+  .foot .box a {
+    color: white;
+  }
+  .foot .box .year {
+    color: white;
+  }
+}
